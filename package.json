@@ -1,0 +1,17 @@
+{
+  "name": "login_tests_partumplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hanna Chyzhyk",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.12.0"
+  },
+  "devDependencies": {
+    "cypress-image-diff-js": "^1.23.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "positive_test_cases": [
+    {
+      "test_name": "Logs in with correct username and password",
+      "username": "standard_user",
+      "pass": "secret_sauce"
+    }
+  ],
+  "negative_test_cases": [
+    {
+      "test_name": "Logs in with empty username",
+      "username": "{esc}",
+      "pass": "secret_sauce",
+      "expected_error": "Epic sadface: Username is required" 
+    },
+    {
+      "test_name": "Logs in with empty password",
+      "username": "standard_user",
+      "pass": "{esc}", 
+      "expected_error": "Epic sadface: Password is required"
+    },
+    {
+      "test_name": "Logs in with locked user credentials",
+      "username": "locked_out_user",
+      "pass": "secret_sauce",
+      "expected_error": "Epic sadface: Sorry, this user has been locked out."
+    }
+  ]
+}
